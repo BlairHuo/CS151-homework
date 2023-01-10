@@ -1,0 +1,44 @@
+List main differences between primitive data type int and class Integer. Be as specific as possible. 
+What are advantages of using each one? List all specific functionalities that are available when using one and not the other. 
+
+
+
+
+int : Type: a int is a primitive data type that stores 32 but signed two's compliment integer.
+      Purpose: int stores integer value into memory
+      Flexibility: int offers less flexibility as compare to Integer as it only allows binary values of an integer in it.
+      Casting: int can assign a string value to an int variable directly or even by casting.
+      Conversion: we can't convert its integer value to other base. 
+   
+ Integer: Type: Integer is wrapper class which wraps a primitive type int into an object.
+          Purpose: Integer can convert int into object and convert an object into int as per requirement.
+          Flexibility: Integer is more flexible n storing and manipulating an int data. Wrapper classes inherit Object class,
+                       they can be used in collections with Object reference.
+          Casting:  Integer can assign string to an object of integer type using the Integer(String)constructor or 
+                    using parseInt(String)to convert a String literal to an int value. 
+          Conversion: Integer we can covert integer value to other base such as Binary,Octal or Hexadecimal format using 
+                      toBinaryString(),toOctalString() or toHexString() respectively.
+                      
+                      
+Advantages
+         1.int:
+              * Less memory footprint 
+              * Immutable, the objects are eaiser to design, implement and use/ remain in one state.
+              * Its operations is much faster than other wrapper class 
+          
+         2. Integer:
+              * More memory footprint
+              * It is a reference type/object , for instance, we can Serialize or Deserialize it
+              * It is stored in the Heap area of the memory.
+              * It has useful utility factory method, for instance, Integer.valueOf(...) to parse the String as an integer.
+              * It can be used into declarations of the generic types and it.             
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
